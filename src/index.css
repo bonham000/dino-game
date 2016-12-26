@@ -1,0 +1,123 @@
+html, body {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 900px;
+  font-family: sans-serif;
+  background: rgb(20,20,20);
+  color: white;
+}
+
+.App {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.Game {
+	width: 700px;
+	height: 300px;
+	margin-top: 125px;
+	background: rgb(25,25,25);
+	border: 1px solid #45B6FF;
+	text-align: center;
+}
+
+.gameTitle {
+	position: relative;
+	text-align: left;
+	top: -38px;
+	left: 5px;
+	font-family: 'VT323', monospace;
+	font-size: 18px;
+	color: rgb(245,245,245)
+}
+
+.scoreBoard {
+	float: right;
+	margin-right: 10px;
+}
+.score {
+	color: #45B6FF;
+}
+.highScore {
+	color: #FFB22C;
+}
+
+.highScoreDisplay {
+	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	font-size: 35px;
+	color: black;
+	font-family: 'VT323', monospace;
+}
+
+#highScoreControl {
+	display: none;
+}
+
+.playerWrapper {
+	position: relative;
+	left: 35px;
+	width: 33px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.player {
+	height: 3px;
+	width: 3px;
+	z-index: 4;
+}
+
+.groundWrapper {
+	position: relative;
+	bottom: -200px;
+	z-index: 5;
+}
+
+.groundLevel {
+	background: #02AD2F;
+	width: 1px;
+	display: inline-block;
+}
+
+.obstacles {
+	position: relative;
+	bottom: -190px;
+	z-index: 3;
+}
+
+.treeWrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cover {
+	position: absolute;
+	-webkit-transform: translateX(-751px);
+	        transform: translateX(-751px);
+	width: 750px;
+	height: 250px;
+	background: rgb(20,20,20);
+	z-index: 10;
+}
